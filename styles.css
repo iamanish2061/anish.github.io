@@ -1271,6 +1271,14 @@
         }
 
         @media (max-width: 576px) {
+
+            .cursor{
+                display: none;
+            }
+            .btn-outline{
+                margin-top: 0px;
+            }
+
             .hero-content h1 {
                 font-size: 36px;
             }
