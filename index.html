@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CursorEffect.css">
 </head>
 <body>
     <!-- Particles Background -->
     <div id="particles-js"></div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor" display="none" >
+        <div class="cursor-small"></div>
+        <div class="cursor-large"></div>
+    </div>
 
     <!-- Header -->
     <header>
@@ -40,9 +47,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <p>Hi, My name is,</p>
+            <p>Hi! My name is,</p>
             <h1>Anish Shrestha</h1>
-            <p>I am a Backend Web Developer</p>
+            <p>I am a <strong>Backend Web Developer</strong></p>
             <p>Have keen interest in creating efficient and scalable server-side logic for modern web applications. </p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn"><i class="fas fa-eye"></i> View My Work</a>
@@ -51,7 +58,7 @@
         </div>
 
         <div class="hero-image">
-            <img src="https://via.placeholder.com/500x500" alt="Profile Image">
+            <img src="profile-image.jpg" alt="Profile Image">
         </div>
         <div class="scroll-down">
             <span>Scroll Down</span>
@@ -65,12 +72,12 @@
         <div class="about-content" id="aboutContent">
             <div class="about-image">
                 <div class="image-container">
-                    <img src="https://via.placeholder.com/400x500" alt="About Image">
+                    <img src="profile-image.jpg" alt="About Image">
                 </div>
             </div>
             <div class="about-text">
                 <h3>Who am I?</h3>
-                <h2>Hey there! 👋🏻</h2>
+                <strong>Hey there! 👋🏻</strong>
                 <p>I'm a Backend Developer passionate about building robust, scalable, and efficient server-side applications.</p>
                 <p>I specialize in designing APIs, managing databases, and optimizing application performance.</p>
                 <p>With a strong command of technologies like Java, C#, SQL, and frameworks like Spring Boot, and React JS, I focus on clean architecture and secure, maintainable code.</p>
@@ -175,10 +182,11 @@
                     <h3>E-commerce Platform</h3>
                     <p>A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout.</p>
                     <div class="project-tags">
-                        <span class="project-tag">React</span>
-                        <span class="project-tag">Node.js</span>
-                        <span class="project-tag">MongoDB</span>
-                        <span class="project-tag">Redux</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JAVASCRIPT</span>
+                        <span class="project-tag">JAVA</span>
+                        <span class="project-tag">MySQL</span>
                     </div>
                     <div class="project-links">
                         <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -193,13 +201,14 @@
                     <img src="https://via.placeholder.com/600x400" alt="Project 2">
                 </div>
                 <div class="project-info">
-                    <h3>Task Management App</h3>
-                    <p>A productivity application for managing tasks with drag-and-drop functionality and team collaboration features.</p>
+                    <h3>Fitness Advisor</h3>
+                    <p>A application for tracking daily nutrients intake and providing suggestions to the user according to their preference.</p>
                     <div class="project-tags">
-                        <span class="project-tag">Vue.js</span>
-                        <span class="project-tag">Firebase</span>
-                        <span class="project-tag">SCSS</span>
-                        <span class="project-tag">Vuex</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JAVASCRIPT</span>
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">MySQL</span>
                     </div>
                     <div class="project-links">
                         <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -244,7 +253,7 @@
                         </div>
                         <div class="contact-text">
                             <h4>Email</h4>
-                            <a href="mailto:your.email@example.com">officialuseanish@gmail.com</a>
+                            <a href="mailto:officialuseanish@gmail.com">officialuseanish@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -253,7 +262,7 @@
                         </div>
                         <div class="contact-text">
                             <h4>Phone</h4>
-                            <a href="tel:+1234567890">+977 9823166482</a>
+                            <a href="tel:+9779823166482">+977 9823166482</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -270,20 +279,20 @@
             <div class="contact-form">
                 <form id="contactForm">
                     <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" class="form-control" required>
+                        <!-- <label for="name">Your Name</label> -->
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" class="form-control" required>
+                        <!-- <label for="email">Your Email</label> -->
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" class="form-control" required>
+                        <!-- <label for="subject">Subject</label> -->
+                        <input type="text" id="subject" class="form-control" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" class="form-control" required></textarea>
+                        <!-- <label for="message">Your Message</label> -->
+                        <textarea id="message" class="form-control" placeholder="Message" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
                 </form>
@@ -319,5 +328,6 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="CursorEffect.js"></script>
 </body>
 </html>
